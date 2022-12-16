@@ -1,0 +1,234 @@
+﻿@{
+    ViewData["Title"] = "ALTUNKAYA KUYUMCULUK";
+}
+<table class="table table-bordered table-dark">
+    <thead>
+        <tr>
+            <th scope="col" class="bg-black"></th>
+            <th scope="col">GRAM ALTIN</th>
+            <th scope="col">ÇEYREK</th>
+            <th scope="col">YARIM</th>
+            <th scope="col">CUMHURİYET</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" class="bg-normal c-white">SATIŞ</th>
+            <td class="yazi"><span id="Y22_Ayar_Bilezik_Satis" class="try yazi" onChange="myAnimation(e)">0.000,00</span><span class="tl">₺</span></td>
+            <td class="yazi"><span id="Cumhuriyet_Ceyrak_Eski_Satis" class="try yazi" onChange="myAnimation(e)">0.000,00</span><span class="tl">₺</span></td>
+            <td class="yazi"><span id="Cumhuriyet_Yarim_Eski_Satis" class="try yazi" onChange="myAnimation(e)">0.000,00</span><span class="tl">₺</span></td>
+            <td class="yazi"><span id="Liralik_Eski_Satis" class="try yazi" onChange="myAnimation(e)">0.000,00</span><span class="tl">₺</span></td>
+        </tr>
+        <tr class="c-red">
+            <th scope="row" class="bg-normal c-white">ALIŞ</th>
+            <td class="c-red yazi c-red"><span id="Y22_Ayar_Bilezik_Alis" class="try yazi c-red" onChange="myAnimation(e)">0.000,00</span><span class="tl">₺</span></td>
+            <td class="c-red yazi c-red"><span id="Cumhuriyet_Ceyrak_Eski_Alis" class="try yazi c-red" onChange="myAnimation(e)">0.000,00</span><span class="tl">₺</span></td>
+            <td class="c-red yazi c-red"><span id="Cumhuriyet_Yarim_Eski_Alis" class="try yazi c-red" onChange="myAnimation(e)">0.000,00</span><span class="tl">₺</span></td>
+            <td class="c-red yazi c-red"><span id="Liralik_Eski_Alis" class="try yazi c-red" onChange="myAnimation(e)">0.000,00</span><span class="tl">₺</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="">
+    <div class="col">
+        <div class="text-center sari">
+            <h1>ALTUNKAYA KUYUMCULUK</h1>
+            @*<h4>KUYUMCULUK</h4>*@
+        </div>
+
+        <div class="text-center zaman">
+            <h4 id="tarih">@DateTime.Now.ToString("dd MMMM yyyy dddd")</h4>
+            <h1 id="txt"></h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-7">
+        <table class="table table-bordered table-dark doviz">
+            <thead>
+                <tr>
+                    <th scope="col" class="bg-black"></th>
+                    <th scope="col">DOLAR</th>
+                    <th scope="col">EURO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="bg-normal c-white">SATIŞ</th>
+                    <td class="yazi" id=""><span id="DolarSatis" class="try yazi dovizYazi">0.000,00</span><span class="tl">₺</span></td>
+                    <td class="yazi" id=""><span id="EuroSatis" class="try yazi dovizYazi">0.000,00</span><span class="tl">₺</span</td>
+                </tr>
+                <tr class="c-red">
+                    <th scope="row" class="bg-normal c-white">ALIŞ</th>
+                    <td class="yazi c-red" id=""><span id="DolarAlis" class="try c-red yazi dovizYazi">0.000,00</span><span class="tl">₺</span></td>
+                    <td class="yazi c-red" id=""><span id="EuroAlis" class="try c-red yazi dovizYazi">0.000,00</span><span class="tl">₺</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="col-5">
+        <table class="table table-bordered table-dark">
+            <thead class="bg-black">
+                <tr class="bg-black">
+                    <th scope="col" class="bg-black">&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">BTC</th>
+                    <td class="yazi" id=""><span id="BTCTRY" class="try yazi cryptoYazi">0.000,00</span><span class="tl">₺</span></td>
+                </tr>
+                <tr>
+                    <th scope="col">ETH</th>
+                    <td class="yazi" id=""><span id="ETHTRY" class="try yazi cryptoYazi">0.000,00</span><span class="tl">₺</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+</div>
+
+<style>
+    @@font-face {
+        font-family: MajorMonoDisplay-Regular;
+        src: url(./css/fonts/MajorMonoDisplay-Regular.ttf);
+    }
+
+    @@font-face {
+        font-family: DS-DIGII;
+        src: url(./css/fonts/DS-DIGII.ttf);
+    }
+
+    @@font-face {
+        font-family: digital-7-mono-italic;
+        src: url(./css/fonts/digital-7-mono-italic.ttf);
+    }
+
+    body {
+        margin: 0;
+        left: 0;
+        top: 0;
+        padding: 0;
+        /*overflow-y: hidden;*/
+        /*overflow-x: hidden;*/
+        /*height: 100vh;*/
+        /*width: 100vw;*/
+        width: 100%;
+        color: white;
+        background-color: #000;
+    }
+
+    main {
+        margin: 0;
+        left: 0;
+        top: 0;
+        padding: 0;
+        /*overflow-y: hidden;*/
+        /*overflow-x: hidden;*/
+        /*height: 100vh;*/
+        /*width: 100vw;*/
+    }
+
+    table {
+        border-spacing: 0;
+        border-collapse: inherit;
+        padding: 0 !important;
+    }
+
+        table tr {
+            padding: 0 !important;
+            text-align: end;
+        }
+
+    tbody tr td:not(th.bg-normal, .saat.table) {
+        /*background-color: black !important;*/
+        color: lawngreen;
+        /*font-weight: 400;*/
+        text-align: end;
+        /*float:right;*/
+        /*font-size: 4rem;*/
+        /*font-family: digital-7-mono-italic!important;*/
+        padding: 0!important;
+        background-color: black !important;
+        font-family: DS-DIGII !important;
+    }
+
+    tbody tr th:not(.bg-black) {
+        background-color: black !important;
+    }
+
+    th {
+        font-size: 1.8rem;
+        font-weight: 700;
+        vertical-align: middle !important;
+        text-align: center;
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+        border-bottom-color: rgb(222, 226, 230);
+        border-bottom-width: 2px;
+        padding: 0;
+        font-size: 36px;
+    }
+
+    .bg-black {
+        background-color: black !important;
+        border: 0 !important;
+    }
+
+    .c-white {
+        color: white;
+    }
+
+    .c-blue {
+        color: dodgerblue;
+    }
+
+    .tl {
+        color: wheat;
+        margin-left: 0.02rem;
+        font-family: MajorMonoDisplay-Regular !important;
+        font-size: 2rem;
+    }
+
+    .sari {
+        color: #fda910;
+    }
+
+    #txt {
+        color: white;
+        font-family: DS-DIGII !important;
+        font-size: 2.4rem !important;
+    }
+
+    #tarih {
+        /*font-size:1rem;*/
+    }
+
+    .yazi {
+        background-color: black !important;
+        font-family: DS-DIGII !important;
+        font-size: 4.6rem  !important;
+        color: lawngreen;
+        padding: 0 !important;
+        text-align: right !important;
+    }
+
+    .c-red {
+        color: red !important;
+        background-color: black !important;
+        /*font-family: DS-DIGII !important;*/
+        /*font-size: 60px !important;*/
+    }
+
+    .dovizYazi, .cryptoYazi {
+        /*font-size: 54px  !important;*/
+    }
+</style>

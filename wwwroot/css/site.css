@@ -1,0 +1,130 @@
+﻿/*@font-face {
+    font-family: MajorMonoDisplay-Regular;
+    src: url(./css/fonts/MajorMonoDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: DS-DIGII;
+    src: url(./css/fonts/DS-DIGII.ttf);
+}
+
+@font-face {
+    font-family: digital-7-mono-italic;
+    src: url(./css/fonts/digital-7-mono-italic.ttf);
+}
+
+.main-btn {
+    border: none;
+    color: white;
+    background: blue;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(-5px)
+    }
+
+    50% {
+        transform: translateX(0)
+    }
+
+    75% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+.main-btn:hover {
+    animation: shake 3 0.2s ease-in-out;
+}
+
+body {
+    color: white;
+    background-color: #000;
+    margin-bottom: 0;
+}
+
+main {
+    margin: 5px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: inherit;
+}
+
+tbody tr td:not(th.bg-normal, .saat.table) {*/
+    /*background-color: black !important;*/
+    /*color: lawngreen;*/
+    /*font-weight: 400;*/
+    /*text-align: right;*/
+    /*font-size: 4rem;*/
+    /*font-family: digital-7-mono-italic!important;*/
+    /*padding: 0;
+    background-color: black !important;
+    font-family: DS-DIGII !important;
+    font-size: 60px !important;
+}
+
+tbody tr th:not(.bg-black) {
+    background-color: black !important;
+}
+
+th {
+    font-size: 1.8rem;
+    font-weight: 400;
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.bg-black {
+    background-color: black !important;
+    border: 0 !important;
+}
+
+.c-red {
+    color: red !important;
+    background-color: black !important;
+    font-family: DS-DIGII !important;
+    font-size: 60px !important;
+}
+
+.c-white {
+    color: white;
+}
+
+.c-blue {
+    color: dodgerblue;
+}
+
+.tl {
+    color: wheat;
+    margin-left: 0.02rem;
+    font-family: MajorMonoDisplay-Regular !important;
+    font-size: 2rem;
+}
+
+.sari {
+    color: #fda910;
+}
+
+.yazi {
+    background-color: black !important;
+    font-family: DS-DIGII !important;
+    font-size: 48px !important;
+}
+
+#txt {
+    color: white;
+    font-family: DS-DIGII !important;
+    font-size: 4.1rem !important;
+}*/
